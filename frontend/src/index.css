@@ -1,0 +1,433 @@
+:root {
+    --main: #F2D5D5;
+    --namePadding: 7px;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+
+    overflow-x: hidden;
+
+    background-image: "./assets/noise3.png";
+    background-repeat: repeat;
+
+    background-color: #212121;
+    color: #cccbcc;
+    /* color: #333433; */
+
+    font-family: "monospace";
+    /* font-family: "Arial Black"; */
+}
+
+#mainContainer {
+    position: fixed;
+    height: 90vh;
+    width: 90vw;
+    left: 5vw;
+    top: 5vh;
+    /* background-color: #333433; */
+    border: 1px solid #F2D5D5;
+    border-radius: 10px;
+}
+
+#mainContainer2 {
+    height: calc(100% - 50px);
+    /* height: 100%; */
+    width: 100%;
+
+}
+
+#mainContainer3 {
+    height: 100%;
+    /* height: 100%; */
+    width: 100%;
+    justify-content: space-around;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.mainContainer4 {
+    position: absolute;
+    height: 90%;
+    width: 40vw;
+    left: 30vw;
+    top: 5vh;
+    /* background-color: #333433; */
+    border: 1px solid #F2D5D5;
+    border-radius: 10px;
+
+    background-color: #333433;
+    opacity: 80%;
+}
+
+.question {
+    width: 100%;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: -5px;
+
+    font-size: 12px;
+}
+
+.radioContainer {
+    height: 30px;
+    width: 100%;
+    font-size: 10px;
+}
+
+a {
+    color: white;
+    /* color: #333433; */
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex2 {
+    /* display: flex; */
+}
+
+.fcol {
+    flex-direction: column;
+}
+
+.frow {
+    flex-direction: row;
+}
+
+#navContainer {
+    width: 50vw;
+    height: 50px;
+
+    margin-top: 50px;
+
+    justify-content: space-around;
+
+    border-bottom: 1px solid black;
+}
+
+.pageTitle {
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+
+    /* padding-bottom: 60px; */
+
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.form1 {
+    /* justify-content: end; */
+    /* flex-grow: 1; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+    
+}
+
+.rClass {
+    height: 100%;
+    width: 100%;
+    justify-content: left;
+    align-items: baseline;
+    margin-top: 100px;
+}
+
+.rLeft {
+    /* background-color: red; */
+    /* justify-content: left; */
+    align-items: baseline;
+    text-align: left;
+}
+
+.rRight {
+    /* background-color: orange; */
+    /* justify-content: right; */
+    align-items: end;
+    text-align: right;
+    font-size: larger;
+}
+
+.personalMiddle {
+    position: fixed;
+    height: 70vh;
+    width: 30%;
+    top: 100px;
+    left: 48%;
+
+    justify-content:flex-start;
+    /* background-color: yellow; */
+}
+
+.pad {
+    padding: 30px;
+}
+
+
+
+.doubleLineContainer {
+    height: 1400px;
+    width: 400px;
+    position: absolute;
+    top: 56%;
+    left: 45%;
+    transform: translate(-45%, -56%);
+
+    /* justify-content: ; */
+}
+
+.lineContainer {
+    height: 100px;
+    width: 400px;
+    position: relative;
+
+    justify-content: flex-start;
+
+
+}
+
+.line {
+    font-family: "Yeseva One";
+    font-size: 40px;
+}
+
+.line1 {
+    font-size: 80px;
+}
+
+.line2 {
+    margin-right: -45px;
+    
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    /* font-style: italic; */
+    font-size: 30px;
+}
+
+.line3 {
+    top: 55%;
+    left: 55%;
+    transform: translate(-55%, -57%);
+    font-size: 80px;
+    
+    position: absolute;
+    width: 400px;
+
+    margin-left: 100px;
+}
+
+.subtitle {
+    font-size: 10px;
+    top: 58%; left: 50%;
+    transform: translate(-58%, -20%);
+    position: absolute;
+
+    width: 200px;
+    margin-left: 20px;
+}
+
+.subtitle1 {
+    position: absolute;
+    left: 150%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    
+}
+
+.subtitle2 {
+    top: 60%;
+    width: 300px;
+}
+
+.rotIcon {
+    transform: rotate(180deg) scale(3.0) translate(-3px, 3px);
+
+}
+
+.yFlip {
+    transform: rotate(90deg) scale(3.0) translate(0, -50px);
+}
+
+.success {
+    color: #32CD32;
+}
+
+.failure {
+    color: red;
+}
+
+
+#miniNav {
+    width: 530px;
+    height: 300px;
+    position: absolute;
+
+    justify-content: space-around;
+
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+}
+
+.navItem {
+    height: 35px;
+    width: 140px;
+    border-radius: 5px;
+
+    font-size: 9px;
+    font-family: monospace;
+
+    border: 1px solid var(--main);
+    background-color: transparent;
+    color: var(--main);
+    transition: all 0.1s ease-in-out;
+}
+
+.navItem:hover {
+    cursor: pointer;
+    background-color: var(--main);
+    color: black;
+    transition: all 0.1s ease-in-out;
+}
+
+#pfp {
+    height: 25vw;
+    width: 25vw;
+    border-radius: 10px;
+    background-size: contain;
+}
+
+.name {
+    font-family: "Yeseva One";
+    padding: 5px;
+    font-size: 40px;
+}
+
+.heading {
+    font-size: 25px;
+    font-weight: 300px;
+}
+
+.backArrow {
+    top: 3px;
+    left: 5vw;
+    position: absolute;
+
+    background-color: transparent;
+    border: 1px solid var(--main);
+    font-size: 12px;
+    border-radius: 5px;
+    color: white;
+}
+
+.backArrow:hover {
+    background-color: var(--main);
+}
+
+.names {
+    position: absolute;
+    font-size: 10px;
+}
+
+.name1 {
+    top: calc(5vh + var(--namePadding));
+    left: calc(5vw + var(--namePadding));
+}
+
+.name2 {
+    top: calc(5vh + var(--namePadding));
+    right: calc(5vw + var(--namePadding));
+}
+
+.name3 {
+    bottom: calc(5vh + var(--namePadding));
+    left: calc(5vw + var(--namePadding));
+}
+
+.name4 {
+    bottom: calc(5vh + var(--namePadding));
+    right: calc(5vw + var(--namePadding));
+}
+
+.name5 {
+    bottom: calc(5vh + var(--namePadding));
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.name6 {
+    top: calc(5vh + var(--namePadding));
+    left: 50%;
+    transform: translate(-50%);
+
+    color: var(--main);
+    font-size: 18px;
+    font-style:italic;
+}
+
+input[type=text] {
+    border-radius: 2px;
+    border: 1px solid var(--main);
+    margin-right: 5px;
+
+    font-family: monospace;
+    font-size: 10px;
+}
+
+input[type=submit] {
+    left: 50%;
+    margin-top: 30px;
+    transform: translate(-50%);
+    position: absolute;
+    font-family: monospace;
+    font-size: 12px;
+    border: 1px solid var(--main);
+}
+
+.longAnswer {
+    height: 30px;
+    width: 300px;
+    margin-top: 5px;
+
+    border-radius: 20px;
+}
+
+.formButton1 {
+    font-family: monospace;
+    font-size: 10px; 
+}
+
+.longAnswerQuestion {
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.horizontalDivider {
+    width: 90%;
+    height: 1px;
+    background-color: var(--main);
+}
+
+.formButton2 {
+    margin-bottom: 20px;
+}
+
+.section {
+    width: 90%;
+}
+
+/* .short {
+    height: 60vh;
+} */
